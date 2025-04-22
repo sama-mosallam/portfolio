@@ -1,0 +1,71 @@
+:root{
+    --main-blue:#3a6cf4;
+}
+
+header{
+    background-color: antiquewhite;
+    width: 100%; 
+    position: fixed;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 10px 200px;
+    z-index: 999;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+.navigation a{
+    text-decoration: none;
+    margin-left: 20px; /* Adjust spacing between items */
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    height: 100hv;
+    align-items: center;
+    padding: 100px 200px;
+    background-image: url('images.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+@media(max-width:750){
+    body{
+        font-size: 12px;
+    }
+}
+@media(max-width:400){
+    body{
+        font-size: 10px;
+    }
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 27px;
+    color: var(--main-blue);
+}
+.content{
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 20em;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 25px black;
+    margin: 14px;
+}
+.card:hover{
+ transform: scale(1.1);   
+}
